@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 80px;
+    font-variation-settings: 'wght' 1000;
+    color: blue;
+    animation-name: variacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+h1:hover {
+    animation-play-state: paused;
+}
+
+@keyframes variacion {
+    0% {
+        font-variation-settings: 'wght' 200;
+    }
+    50% {
+        font-variation-settings: 'wght' 700;
+    }
+    100% {
+        font-variation-settings: 'wght' 200;
+    }
+}
+
